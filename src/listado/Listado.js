@@ -28,7 +28,6 @@ class Listado extends Component {
             />
         );
       });
-      
       this.setState({products: products});
       
       let categories = data.categories ? data.categories.map((cat) => {
@@ -38,7 +37,6 @@ class Listado extends Component {
             </li>
         );
       }) : (null);
-      
       this.setState({categories: categories});
     });
   }

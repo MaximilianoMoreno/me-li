@@ -5,7 +5,6 @@ import mercadoLibre from './../images/mercado-libre.png';
 import constants from './../constants/constants'
 
 class Header extends Component {
-  
   constructor() {
     super();
     this.handleChange = this.handleChange.bind(this);

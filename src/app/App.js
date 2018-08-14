@@ -6,7 +6,6 @@ import Detalle from "./../detalle/Detalle";
 import Resultado from "./../resultado/Resultado";
 
 class App extends Component {
-  
   constructor(props) {
     super(props);
     this.state = {

@@ -7,7 +7,7 @@ class Loading extends Component {
   
   render() {
     return (
-        <div className="columnsloading">
+        <div className="columns loading">
           <span className="offset-by-one ten columns loading">{constants.LITERALS.CARGANDO}</span>
           <img className="offset-by-one ten columns" src={loading} alt=""/>
         </div>

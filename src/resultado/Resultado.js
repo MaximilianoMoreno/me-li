@@ -4,7 +4,6 @@ import Header from "../header/Header";
 import Listado from "../listado/Listado";
 
 class Resultado extends Component {
-  
   render() {
     return (
         <div className="App">

@@ -26,11 +26,8 @@ class Item extends Component {
                                                                                  prefix={constants.CURRENCY[this.props.item.price.currency]}/>
                   {freeShipping}
                 </div>
-                
-                
-                <div className="offset-by-seven two columns location">{this.props.item.address.state_name}</div>
+                <div className="offset-by-eight two columns location">{this.props.item.address.state_name}</div>
               </div>
-              
               
               <div className="offset-by-one six columns description">{this.props.item.title}</div>
             </div>
