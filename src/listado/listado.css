@@ -1,0 +1,29 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css");
+body {
+  font-family: "Proxima Nova", -apple-system, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; }
+
+.alpha {
+  margin-left: 0; }
+
+body {
+  background-color: #EEEEEE; }
+  body .list-container {
+    background-color: white; }
+    body .list-container ul.breadcrumbs {
+      background-color: #EEEEEE;
+      color: #333333;
+      font-size: 14px;
+      list-style: none;
+      padding: 10px 16px;
+      text-align: left; }
+      body .list-container ul.breadcrumbs li {
+        display: inline; }
+        body .list-container ul.breadcrumbs li:last-child {
+          font-weight: bold; }
+        body .list-container ul.breadcrumbs li a {
+          color: #333333;
+          margin: 0; }
+      body .list-container ul.breadcrumbs li + li:before {
+        padding-left: 4px;
+        color: black;
+        content: ">\00a0"; }

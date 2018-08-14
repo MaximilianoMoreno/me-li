@@ -1,0 +1,75 @@
+@import "./../styles/custom";
+@import "./../styles/variable";
+
+.detail-page {
+  background-color: $white;
+}
+
+.item-detail {
+  background-color: $white;
+  color: $dark-gray-text;
+  padding: $wide-separator 0;
+  text-align: left;
+
+  .img-container {
+    margin-left: $narrow-separator;
+
+    max-width: 680px;
+
+    img {
+      border-radius: 4px;
+      max-width: 680px;
+      width: 100%;
+    }
+  }
+
+  .detail-container {
+    .top-description {
+      color: $dark-gray;
+      font-size: 14px;
+      margin-bottom: $narrow-separator;
+      margin-top: $wide-separator;
+    }
+
+    .description {
+      font-size: 18px;
+      margin-top: $wide-separator;
+    }
+
+    .price {
+      font-size: 46px;
+    }
+
+    .title {
+      margin-bottom: $wide-separator;
+      h2 {
+        font-size: 24px;
+      }
+    }
+
+    button {
+      background-color: $blue;
+      color: $white;
+      margin-right: $wide-separator;
+      text-transform: capitalize;
+    }
+  }
+
+  .description-container {
+    margin-top: $wide-separator;
+
+    .title {
+      font-size: 28px;
+    }
+
+    .description {
+      font-family: "Proxima Nova", -apple-system, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+      white-space: pre-wrap;
+      white-space: -moz-pre-wrap;
+      white-space: -pre-wrap;
+      white-space: -o-pre-wrap;
+      word-wrap: break-word;
+    }
+  }
+
+}

@@ -1,0 +1,31 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css");
+body {
+  font-family: "Proxima Nova", -apple-system, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; }
+
+.alpha {
+  margin-left: 0; }
+
+a {
+  text-decoration: none;
+  margin: 16px;
+  text-align: left; }
+  a:hover {
+    text-decoration: none;
+    cursor: pointer; }
+  a .item-detail {
+    color: #333333; }
+    a .item-detail .img-container {
+      margin-left: 16px; }
+      a .item-detail .img-container img {
+        border-radius: 4px;
+        height: 180px;
+        width: 180px; }
+    a .item-detail .detail-container .top-container .price {
+      font-size: 24px; }
+      a .item-detail .detail-container .top-container .price img.free-shipping {
+        margin-left: 10px; }
+    a .item-detail .detail-container .top-container .location {
+      font-size: 12px; }
+    a .item-detail .detail-container .description {
+      font-size: 18px;
+      margin-top: 32px; }

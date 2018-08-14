@@ -1,0 +1,35 @@
+{
+  "name": "me-li",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "glob": "^7.1.2",
+    "lodash": "^4.17.10",
+    "node-cache": "^4.2.0",
+    "node-sass-chokidar": "^1.3.3",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "react-number-format": "^3.5.1",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "1.1.4",
+    "react-skeleton-css": "^1.1.0"
+  },
+  "scripts": {
+    "build-css": "node-sass-chokidar src/ -o src/",
+    "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "proxy": "http://localhost:8080",
+  "devDependencies": {
+    "nodemon": "^1.18.3"
+  }
+}

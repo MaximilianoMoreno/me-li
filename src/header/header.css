@@ -1,0 +1,35 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css");
+body {
+  font-family: "Proxima Nova", -apple-system, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; }
+
+.alpha {
+  margin-left: 0; }
+
+.header {
+  background-color: #FFE600;
+  height: 50px;
+  padding: 10px 0px;
+  color: #333333;
+  font-size: 16px;
+  font-weight: 400; }
+  .header .encabezado .logo {
+    height: 46px; }
+    .header .encabezado .logo img {
+      height: 46px; }
+  .header .encabezado .buscador {
+    border: none; }
+    .header .encabezado .buscador form {
+      margin: 0; }
+      .header .encabezado .buscador form input {
+        border: none;
+        height: 46px;
+        padding: 0 10px;
+        vertical-align: top; }
+      .header .encabezado .buscador form button {
+        background-color: #EEEEEE;
+        border-color: #EEEEEE;
+        height: 47px;
+        padding: 3px;
+        width: 47px; }
+        .header .encabezado .buscador form button .search {
+          height: 40px; }

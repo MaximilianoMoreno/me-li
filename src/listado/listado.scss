@@ -1,0 +1,38 @@
+@import "./../styles/custom";
+@import "./../styles/variable";
+
+body {
+  background-color: $light-gray;
+
+  .list-container {
+
+    background-color: white;
+
+    ul.breadcrumbs {
+      background-color: $light-gray;
+      color: $dark-gray-text;
+      font-size: 14px;
+      list-style: none;
+      padding: 10px 16px;
+      text-align: left;
+
+      li {
+        display: inline;
+
+        &:last-child {
+          font-weight: bold;
+        }
+        a {
+          color: $dark-gray-text;
+          margin: 0;
+        }
+      }
+
+      li + li:before {
+        padding-left: 4px;
+        color: black;
+        content: ">\00a0";
+      }
+    }
+  }
+}
