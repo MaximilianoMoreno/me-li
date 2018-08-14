@@ -2,27 +2,23 @@
   'use strict';
   
   let  _= require('lodash'),
-          CacheService = require('../services/cache.server.service'),
           request = require('request'),
           itemsService = require('../services/items.server.services');
   
   let controller = {
-    "getItems": getLatestConversion,
+    "getItems": getItems,
     "getItemById": getItemById
   };
   
-  const ttl = 10 * 60 * 1; // cache for 10 minutes
-  const cache = new CacheService(ttl); // Create a new cache service instance
-  
   module.exports = controller;
   
-  function getLatestConversion(req, res) {
+  function getItems(req, res) {
     let query = req.query.q;
+    console.log('GET: items by query: ');
     console.log(query);
     if (query) {
       try {
         doRequest('https://api.mercadolibre.com/sites/MLA/search?q=' + query + '&limit=4').then( (body) => {
-  
           let results = itemsService.parseListDTO(JSON.parse(body));
           res.send(results);
         })
@@ -42,7 +38,9 @@
     let query = req.params.id;
     let item;
     let description;
-    let result;
+    let result;    console.log();
+    console.log('GET: items by ID: ');
+    console.log(query);
   
     try {
       item = await doRequest('https://api.mercadolibre.com/items/' + query);
